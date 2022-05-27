@@ -116,8 +116,8 @@ import (
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ymgal"          // 月幕galgame
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/zaobao"         // 早报
 
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wtf"            // 鬼东西
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/bilibili_push"  // b站推送
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/bilibili_push" // b站推送
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/wtf"           // 鬼东西
 
 	//                               ^^^^                               //
 	//                          ^^^^^^^^^^^^^^                          //
@@ -174,7 +174,7 @@ func init() {
 	// 直接写死 URL 时，请更改下面第二个参数
 	url := flag.String("u", "ws://127.0.0.1:6700", "Set Url of WSClient.")
 	// 默认昵称
-	adana := flag.String("n",  "ナマちゃん", "Set default nickname.")
+	adana := flag.String("n", "ナマちゃん", "Set default nickname.")
 	prefix := flag.String("p", "/", "Set command prefix.")
 	runcfg := flag.String("c", "", "Run from config file.")
 	save := flag.String("s", "", "Save default config to file and exit.")
@@ -208,7 +208,7 @@ func init() {
 	// sus = append(sus, 87654321)
 
 	// 启用 gui
-        // webctrl.InitGui(*g)
+	// webctrl.InitGui(*g)
 
 	if *runcfg != "" {
 		f, err := os.Open(*runcfg)
